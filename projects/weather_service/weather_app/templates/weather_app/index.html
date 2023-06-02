@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>날씨 정보 서비스</title>
+</head>
+<body>
+    <h1>METAR를 이용한 날씨 정보 서비스</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="station">날씨 정보를 확인할 지역을 입력해주세요:</label>
+        <input type="text" id="station" name="station" required>
+        <input type="submit" value="검색">
+    </form>
+    <p>-------------------------------------------------------------------------------------</p>
+    <h1>검색 가능 지역</h1>
+    <p>서울</p>
+    <p>경기도 : 인천, 수원</p>
+    <p>강원도 : 청주</p>
+    <p>충청도 : 원주</p>
+    <p>전라도 : 군산</p>
+    <p>경상도 : 울산</p>
+    <p>제주도</p>
+</body>
+</html>
